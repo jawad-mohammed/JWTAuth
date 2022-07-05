@@ -1,0 +1,63 @@
+Cookies more properly called HTTPcookies are small bits of data stored as text files on a browser
+Cookies associated bits of data to a specific user
+Cookies are mainly used for three purposes
+
+Session management
+Logins, shopping carts, game score or anything else the server should remember 
+
+Personalization
+User preferences,themes and other settings.
+A user's preferences such as lannguage and preferred theme could be saved for futire sessions
+
+Tracking
+Recording and analyzing user behaviour
+Ex.When  a client accesses a ecommerce website and browses an item, the item gets saved in their browser history.Cookies can read browsing history so similar are shown to the user next time they visit
+
+Types of cookies
+1)Session cookies
+Session cookies also known as 'temporary' cookies.It helps websites recognise users and the information provided when they navigate through a website
+Session cookies only retain information about a user's activities for as long as they are on the website.Once the web browser is closed, the cookies are deleted.
+
+2)Permanent cookies
+Permanent cookies are also known as 'persistent cookies'
+They remain in operation even after the web browser has closed.For example they can remember login details and passwords so web users don't have to reenter them every time they use a site
+
+3)Third-part cookies
+Third-party cookies are installed by third-parties with the aim of collecting certain information from web users to carry our research into
+for example behaviour demographics or spnding habits.
+They are commonly used by advertisers who waht to ensure that products and services are merketed towards the right target audience
+
+Flash cookies
+Flash cookies are also knon as 'super cookies'.They are independent from the web browsers.They are designed to be permenantly stored on a user's computer.These are types of cookies remain on a user's device even after all cookies have been deleted from their web browser
+
+Zombie cookies
+Zombie cookie are a type of  flash cookies that are automatically re-create after a user has deleted them.This means thay are difficult to detect or manage.They are often used in online games to prevent user's from cheating.But have also been used to install malacius software ontp a user's device
+
+
+What is the difference between Cookies and sessions
+Cookies and sessions are used to store information
+Cookies are only stored on the client machine 
+while sessions get stored on the client as well as a server
+ 
+
+////////////////////////////////////////////////////
+Session based authentication 
+also know as Passport.js local strategy 
+Large companies like youtube,Google,github, microsoft rely on OAuth just to protocol just give different access to users
+Auth0 Okta
+
+ Passport.js
+On each HTTP request, Passport will use a Strategy tp determine whethrt the requestor has permission to view that resource
+If user does not have permission a 401 unauthorized Error is thrown
+Pasport Strategies
+Each strategy uses the Passport JS framework as a template
+The Passport Local Strategy utilizes Cookies,Express sessions and 
+authentication logic
+
+
+
+
+
+
+
+
