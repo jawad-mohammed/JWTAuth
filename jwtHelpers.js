@@ -1,26 +1,19 @@
-const jwt = require('jsonwebtoken')
+const JWT = require('jsonwebtoken')
 require('dotenv').config()
 
-function jwtGenerator (customerid){
-const payload={
-    user: {
-        id:customerid
+function jwtHelper (userid){
+const payload ={
+    customerid:{
+        id:userid
     }
 }
-return jwt.sign(payload,process.env.jwtSecret,{expiresIn:'1hr'})
+
+//return JWT.sign(payload,process.env.jwtToken,{expiresIn:'1hr'})  //this is acces token
+
+const accessToken =JWT.sign(payload,process.env.ACCESS_TOKEN,{expiresIn:'30s'})  //this is acces token
+const refreshToken = JWT.sign(payload,process.env.REFRESH_TOKEN,{expiresIn:'5m'}) //this is refresh token
+return {accessToken,refreshToken}
 
 }
-module.exports = jwtGenerator
 
-
-
-
-
-
-
-
-
-
-
-
-
+module.exports = jwtHelper
